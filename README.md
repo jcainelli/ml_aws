@@ -1,18 +1,21 @@
-# Welcome to your CDK Java project!
+# Welcome to IaC 
+This project is Infrastructure as code (IaC) to working with the AWS CDK in Java. 
 
-This is a blank project for Java development with CDK.
+It's a [Maven](https://maven.apache.org/) based project to working with [AWS CDK](https://aws.amazon.com/pt/cdk/) so you can create or destroy stacks or resources necessary for your applications.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-It is a [Maven](https://maven.apache.org/) based project, so you can open this project with any Maven compatible Java IDE to build and run tests.
-
 ## Useful commands
 
+ * `cdk deploy Vpc Cluster MlService`      deploy this stack to your default AWS account/region
+ * `cdk destroy Vpc Cluster MlService`        drop stack
  * `mvn package`     compile and run tests
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
+ 
+## Example of use
+#### Create RDS Stack with parameters:
 
-Enjoy!
+`$ cdk deploy --parameters Rds:databasePassword=maria123456 Rds`
