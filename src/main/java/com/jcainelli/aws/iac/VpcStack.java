@@ -1,4 +1,4 @@
-package com.myorg;
+package com.jcainelli.aws.iac;
 
 import software.amazon.awscdk.core.Construct;
 import software.amazon.awscdk.core.Stack;

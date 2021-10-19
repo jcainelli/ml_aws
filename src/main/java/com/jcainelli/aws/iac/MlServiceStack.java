@@ -1,4 +1,4 @@
-package com.myorg;
+package com.jcainelli.aws.iac;
 
 import org.jetbrains.annotations.NotNull;
 import software.amazon.awscdk.core.*;

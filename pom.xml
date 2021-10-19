@@ -30,7 +30,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>com.myorg.AwsMlApp</mainClass>
+                    <mainClass>com.jcainelli.aws.iac.AwsMlApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>
